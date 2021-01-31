@@ -1,0 +1,16 @@
+
+  {
+    "name": "bug-reporter",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm run setup:client && npm run setup:server && npm run build:client",
+      "setup:client": "cd bug-reporter.client && npm i",
+      "setup:server": "cd bug-reporter.server && npm i",
+      "build:client": "npm run --prefix bug-reporter.client build",
+      "start": "node bug-reporter.server/index.js"
+    },
+    "engines": {
+      "node": "^14.15.4"
+    }
+  }
+  
